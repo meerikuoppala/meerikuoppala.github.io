@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeri Kuoppala</title>
+<meta name="description" content="Meeri Kuoppala — tutkimuspäällikkö tekoälyturvallisuusorganisaatio ERAssa Cambridgessa. Research Manager at ERA, an AI safety organisation in Cambridge.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f5f6f4;
+    --ink:#20262a;
+    --muted:#5b6a71;
+    --accent:#25606d;
+    --rule:#d8ddda;
+  }
+  *{box-sizing:border-box}
+  html{font-size:17px}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,"Times New Roman",serif;
+    line-height:1.65;
+  }
+  main{
+    max-width:36rem;
+    margin:0 auto;
+    padding:4.5rem 1.4rem 3rem;
+  }
+  header{margin-bottom:2.2rem}
+  h1{
+    font-size:2.4rem;
+    font-weight:500;
+    letter-spacing:-0.01em;
+    margin:0 0 .4rem;
+    line-height:1.15;
+  }
+  .role{
+    margin:0;
+    color:var(--muted);
+    font-size:1.02rem;
+  }
+  figure{
+    margin:2rem 0 2.2rem;
+  }
+  figure img{
+    display:block;
+    width:9.5rem;
+    height:auto;
+    border-radius:2px;
+  }
+  figure.missing{display:none}
+  section{margin:0 0 1.9rem}
+  section p{margin:0 0 1rem}
+  .en{
+    border-top:1px solid var(--rule);
+    padding-top:1.7rem;
+    font-style:normal;
+  }
+  .en-lead{
+    font-style:italic;
+    color:var(--muted);
+  }
+  a{
+    color:var(--accent);
+    text-decoration-thickness:1px;
+    text-underline-offset:3px;
+  }
+  a:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+  .contact{
+    border-top:1px solid var(--rule);
+    padding-top:1.7rem;
+  }
+  footer{
+    margin-top:3.2rem;
+    color:var(--muted);
+    font-size:.85rem;
+  }
+  @media (max-width:480px){
+    html{font-size:16px}
+    main{padding-top:3rem}
+    h1{font-size:2rem}
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Meeri Kuoppala</h1>
+    <p class="role">Tutkimuspäällikkö · Research Manager, ERA (Cambridge)</p>
+  </header>
+
+  <!-- Jos et lataa kuvaa, tämä lohko piilottaa itsensä automaattisesti. -->
+  <figure onerror="this.classList.add('missing')">
+    <img src="photo.jpg" alt="Meeri Kuoppala" onerror="this.parentElement.classList.add('missing')">
+  </figure>
+
+  <section>
+    <p>Olen tutkimuspäällikkö tekoälyturvallisuusorganisaatio ERAssa Cambridgessa
+    ja teen matematiikan maisteriopintoja Helsingin yliopistossa. Kirjoitan
+    kehittyneen tekoälyn riskeistä ja niihin vastaamisesta kansainvälisellä
+    sääntelyllä.</p>
+  </section>
+
+  <section class="en" lang="en">
+    <p><span class="en-lead">In English:</span> I am a Research Manager at ERA,
+    an AI safety organisation in Cambridge, and a mathematics graduate student
+    at the University of Helsinki. I write about risks from advanced AI and
+    the international governance needed to address them.</p>
+  </section>
+
+  <!-- KIRJOITUKSIA: kun Vieraskynä on julkaistu, poista kommenttimerkit
+       tämän lohkon ympäriltä ja vaihda linkki oikeaksi.
+  <section>
+    <p>Kirjoituksia / Writing:<br>
+    <a href="LINKKI-TÄHÄN">Suomen on ajettava superälyn kieltosopimusta</a>
+    (Helsingin Sanomat, Vieraskynä, 2026)</p>
+  </section>
+  -->
+
+  <section class="contact">
+    <p>Yhteydenotot / Contact:<br>
+    <a href="mailto:meeri.kuoppala@gmail.com">meeri.kuoppala@gmail.com</a></p>
+    <!-- LINKEDIN: lisää rivi halutessasi näin:
+    <p><a href="https://www.linkedin.com/in/OMA-OSOITTEESI">LinkedIn</a></p>
+    -->
+  </section>
+
+  <footer>
+    <p>meerikuoppala.fi</p>
+  </footer>
+</main>
+</body>
+</html>
