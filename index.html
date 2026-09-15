@@ -3,11 +3,78 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meeri Kuoppala</title>
-<meta name="description" content="Meeri Kuoppala — tutkimuspäällikkö tekoälyturvallisuusorganisaatio ERAssa Cambridgessa. Research Manager at ERA, an AI safety organisation in Cambridge.">
+<title>Meeri Kuoppala – tekoälyturvallisuus ja superälyn riskit</title>
+<meta name="description" content="Tutkimuspäällikkö tekoälyturvallisuusorganisaatio ERAssa Cambridgessa. HS Vieraskynä 2026 superälyn riskeistä. Haastattelut suomeksi ja englanniksi.">
+<meta name="author" content="Meeri Kuoppala">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://meerikuoppala.fi/">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Meeri Kuoppala">
+<meta property="og:title" content="Meeri Kuoppala – tekoälyturvallisuus ja superälyn riskit">
+<meta property="og:description" content="Tutkimuspäällikkö tekoälyturvallisuusorganisaatio ERAssa Cambridgessa. HS Vieraskynä 14.9.2026: Superälyn kehitys voi uhata koko ihmiskuntaa. Käytettävissä haastatteluihin suomeksi ja englanniksi.">
+<meta property="og:url" content="https://meerikuoppala.fi/">
+<meta property="og:image" content="https://meerikuoppala.fi/photo.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Meeri Kuoppala">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="profile:first_name" content="Meeri">
+<meta property="profile:last_name" content="Kuoppala">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Meeri Kuoppala – tekoälyturvallisuus ja superälyn riskit">
+<meta name="twitter:description" content="Research Manager at ERA, an AI safety organisation in Cambridge. Writes on risks from superintelligence and international governance. Available for interviews in Finnish and English.">
+<meta name="twitter:image" content="https://meerikuoppala.fi/photo.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2325606d'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23f5f6f4'%3EM%3C/text%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://meerikuoppala.fi/#person",
+      "name": "Meeri Kuoppala",
+      "url": "https://meerikuoppala.fi/",
+      "image": "https://meerikuoppala.fi/photo.jpg",
+      "jobTitle": "Research Manager",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "ERA Fellowship (Existential Risk Alliance)",
+        "url": "https://erafellowship.org/"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Helsinki",
+        "url": "https://www.helsinki.fi/"
+      },
+      "email": "mailto:meeri.kuoppala@gmail.com",
+      "telephone": "+358505365021",
+      "knowsLanguage": ["fi", "en"],
+      "knowsAbout": ["AI safety", "Superintelligence", "AI governance", "Existential risk", "Mathematics"],
+      "sameAs": [
+        "https://www.linkedin.com/in/meeri-kuoppala-4bb941231/",
+        "https://erafellowship.org/about"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://meerikuoppala.fi/#website",
+      "url": "https://meerikuoppala.fi/",
+      "name": "Meeri Kuoppala",
+      "inLanguage": ["fi", "en"],
+      "about": { "@id": "https://meerikuoppala.fi/#person" }
+    }
+  ]
+}
+</script>
+
 <style>
   :root{
     --paper:#f5f6f4;
@@ -43,22 +110,26 @@
     color:var(--muted);
     font-size:1.02rem;
   }
-  figure{
-    margin:2rem 0 2.2rem;
-  }
-  figure img{
+  figure{margin:2rem 0 2.2rem}
+  figure.portrait img{
     display:block;
     width:9.5rem;
     height:auto;
     border-radius:2px;
   }
-  figure.missing{display:none}
   section{margin:0 0 1.9rem}
   section p{margin:0 0 1rem}
+  h2{
+    font-size:.78rem;
+    font-weight:500;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0 0 1.1rem;
+  }
   .en{
     border-top:1px solid var(--rule);
     padding-top:1.7rem;
-    font-style:normal;
   }
   .en-lead{
     font-style:italic;
@@ -74,9 +145,57 @@
     outline-offset:3px;
     border-radius:2px;
   }
+
+  /* Kirjoituksia */
+  .writing{
+    border-top:1px solid var(--rule);
+    padding-top:1.7rem;
+  }
+  .writing h3{
+    font-size:1.3rem;
+    font-weight:500;
+    line-height:1.3;
+    margin:0 0 .3rem;
+  }
+  .writing h3 a{color:var(--ink)}
+  .writing h3 a:hover{color:var(--accent)}
+  .meta{
+    color:var(--muted);
+    font-size:.92rem;
+    margin:0 0 1rem;
+  }
+  .clip{margin:1.3rem 0 1.5rem}
+  .clip > a{display:block;width:100%}
+  .clip img{
+    display:block;
+    width:100%;
+    height:auto;
+    border:1px solid var(--rule);
+    border-radius:3px;
+    background:#fff;
+    box-shadow:0 1px 2px rgba(32,38,42,.06),0 10px 28px -14px rgba(32,38,42,.28);
+  }
+  .clip figcaption{
+    font-size:.85rem;
+    color:var(--muted);
+    margin-top:.55rem;
+  }
+
+  /* Medialle & yhteystiedot */
   .contact{
     border-top:1px solid var(--rule);
     padding-top:1.7rem;
+  }
+  .contact ul{
+    list-style:none;
+    padding:0;
+    margin:1.3rem 0 0;
+  }
+  .contact li{margin:0 0 .5rem}
+  .contact li span{
+    display:inline-block;
+    min-width:9.5rem;
+    color:var(--muted);
   }
   footer{
     margin-top:3.2rem;
@@ -87,6 +206,7 @@
     html{font-size:16px}
     main{padding-top:3rem}
     h1{font-size:2rem}
+    .contact li span{display:block;min-width:0;font-size:.85rem}
   }
 </style>
 </head>
@@ -97,44 +217,89 @@
     <p class="role">Tutkimuspäällikkö · Research Manager, ERA (Cambridge)</p>
   </header>
 
-  <!-- Jos et lataa kuvaa, tämä lohko piilottaa itsensä automaattisesti. -->
-  <figure onerror="this.classList.add('missing')">
-    <img src="photo.jpg" alt="Meeri Kuoppala" onerror="this.parentElement.classList.add('missing')">
+  <figure class="portrait">
+    <img src="photo.jpg" alt="Meeri Kuoppala" width="800" height="800">
   </figure>
 
   <section>
-    <p>Olen tutkimuspäällikkö tekoälyturvallisuusorganisaatio ERAssa Cambridgessa
-    ja teen matematiikan maisteriopintoja Helsingin yliopistossa. Kirjoitan
-    kehittyneen tekoälyn riskeistä ja niihin vastaamisesta kansainvälisellä
-    sääntelyllä.</p>
+    <p>Olen tutkimuspäällikkö tekoälyturvallisuusorganisaatio ERAssa
+    (Existential Risk Alliance) Cambridgessa, jossa ohjaan teknisen
+    tekoälyturvallisuuden tutkimusta. Taustani on tekoälyturvallisuus­tutkimuksessa
+    ja matematiikassa, ja teen matematiikan maisteriopintoja Helsingin
+    yliopistossa. Kirjoitan kehittyneen tekoälyn riskeistä ja niihin
+    vastaamisesta kansainvälisellä sääntelyllä.</p>
   </section>
 
   <section class="en" lang="en">
-    <p><span class="en-lead">In English:</span> I am a Research Manager at ERA,
-    an AI safety organisation in Cambridge, and a mathematics graduate student
-    at the University of Helsinki. I write about risks from advanced AI and
-    the international governance needed to address them.</p>
+    <p><span class="en-lead">In English:</span> I am a Research Manager at ERA
+    (Existential Risk Alliance), an AI safety organisation in Cambridge, where
+    I supervise technical AI safety research. My background is in AI safety
+    research and mathematics, and I am a mathematics graduate student at the
+    University of Helsinki. I write about risks from advanced AI and the
+    international governance needed to address them.</p>
   </section>
 
-  <!-- KIRJOITUKSIA: kun Vieraskynä on julkaistu, poista kommenttimerkit
-       tämän lohkon ympäriltä ja vaihda linkki oikeaksi.
-  <section>
-    <p>Kirjoituksia / Writing:<br>
-    <a href="LINKKI-TÄHÄN">Suomen on ajettava superälyn kieltosopimusta</a>
-    (Helsingin Sanomat, Vieraskynä, 2026)</p>
-  </section>
-  -->
+  <section class="writing" id="kirjoituksia">
+    <h2>Kirjoituksia · Writing</h2>
 
-  <section class="contact">
-    <p>Yhteydenotot / Contact:<br>
-    <a href="mailto:meeri.kuoppala@gmail.com">meeri.kuoppala@gmail.com</a></p>
-    <!-- LINKEDIN: lisää rivi halutessasi näin:
-    <p><a href="https://www.linkedin.com/in/OMA-OSOITTEESI">LinkedIn</a></p>
-    -->
+    <article>
+      <h3><a href="https://www.hs.fi/nakemys/art-2000012267952.html">Superälyn kehitys voi uhata koko ihmiskuntaa</a></h3>
+      <p class="meta">Helsingin Sanomat, Vieraskynä, 14.9.2026 · yhdessä Nate Soaresin kanssa</p>
+
+      <figure class="clip">
+        <a href="https://www.hs.fi/nakemys/art-2000012267952.html" aria-label="Lue Vieraskynä Helsingin Sanomien sivuilla">
+          <img src="vieraskyna-hs-2026-09-14.png"
+               alt="Kuvakaappaus Helsingin Sanomien Vieraskynä-kirjoituksesta ”Superälyn kehitys voi uhata koko ihmiskuntaa”, kirjoittajat Meeri Kuoppala ja Nate Soares"
+               width="673" height="823" loading="lazy">
+        </a>
+        <figcaption>Kirjoitus HS:n verkkosivuilla 14.9.2026. <a href="https://www.hs.fi/nakemys/art-2000012267952.html">Lue koko kirjoitus hs.fi:ssä</a>.</figcaption>
+      </figure>
+
+      <p>Kirjoitimme Nate Soaresin kanssa superälyn aiheuttamasta uhasta
+      ihmiskunnalle. Soares on Machine Intelligence Research Instituten (MIRI)
+      johtaja ja New York Times -bestsellerin <em>If Anyone Builds It, Everyone
+      Dies</em> toinen kirjoittaja. Missään ei ole esitetty uskottavaa
+      suunnitelmaa siitä, miten superälyn tavoitteita ohjataan niin, etteivät ne
+      koidu ihmiskunnan kohtaloksi. Siksi Suomen on ajettava kansainvälistä
+      sopimusta superälyn kehittämisen kieltämiseksi. Kielto on myös
+      valvottavissa: edistyneimmät tekoälypiirit valmistetaan pääosin TSMC:n
+      tehtaissa Taiwanissa, ja niiden valmistukseen tarvittavia EUV-laitteita
+      tekee käytännössä vain ASML Alankomaissa.</p>
+
+      <p lang="en"><span class="en-lead">In English:</span> An op-ed in
+      Helsingin Sanomat, Finland's largest newspaper, co-written with Nate
+      Soares, director of the Machine Intelligence Research Institute and
+      co-author of the New York Times bestseller <em>If Anyone Builds It,
+      Everyone Dies</em>. We argue that no one has a credible plan for steering
+      the goals of a superintelligence, and that Finland should push for an
+      international treaty prohibiting its development. Such a ban would be
+      verifiable: most cutting-edge AI chips are made in TSMC's fabs in Taiwan,
+      and the EUV lithography machines needed to make them come almost
+      exclusively from ASML in the Netherlands.</p>
+    </article>
+  </section>
+
+  <section class="contact" id="yhteystiedot">
+    <h2>Medialle ja yhteydenotot · Media &amp; contact</h2>
+
+    <p>Olen käytettävissä haastatteluihin ja taustoituksiin suomeksi ja
+    englanniksi, esimerkiksi superälyn riskeistä, tekoälyturvallisuudesta ja
+    tekoälyn kansainvälisestä sääntelystä.</p>
+
+    <p lang="en"><span class="en-lead">In English:</span> I am available for
+    interviews and background briefings in Finnish and English, on topics such
+    as risks from superintelligence, AI safety and the international governance
+    of AI.</p>
+
+    <ul>
+      <li><span>Puhelin · Phone</span> <a href="tel:+358505365021">+358 50 536 5021</a></li>
+      <li><span>Sähköposti · Email</span> <a href="mailto:meeri.kuoppala@gmail.com">meeri.kuoppala@gmail.com</a></li>
+      <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/meeri-kuoppala-4bb941231/">linkedin.com/in/meeri-kuoppala</a></li>
+    </ul>
   </section>
 
   <footer>
-    <p>meerikuoppala.fi</p>
+    <p>© 2026 Meeri Kuoppala · meerikuoppala.fi</p>
   </footer>
 </main>
 </body>
